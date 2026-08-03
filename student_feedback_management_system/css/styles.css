@@ -1,0 +1,81 @@
+body 
+{
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.containerlogin 
+{
+  /* Use flexbox to position the login card neatly and add spacing around the section. */
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px; 
+  color: #F9F9F9; 
+}
+
+.cardlogin 
+{
+  /* Style the login card so the form is grouped inside a clear visual container. */
+  background-color: #3A82D7; /* Uses the same colour scheme as the wireframes. */
+  width: 100%;
+  max-width: 520px;
+  border: 3px solid #000000;
+  border-radius: 12px;
+  padding: 24px;
+ 
+}
+
+h1 
+{
+   /* Reduces the default heading spacing and keeps the heading readable on the coloured card. */
+  margin: 0 0 8px 0;
+  color: #F9F9F9; 
+}
+
+label 
+{
+  /* Put each label on its own line and add spacing before each input field. */
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 600px;
+}
+
+input 
+{
+  /* Make input fields fill the available width and keep their sizing consistent. */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  
+}
+
+.btn_login 
+{
+  /* Style the login button so it stands out as the main action on the form. */
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid  #000000; /* Border used to showcase the boundaries of the login. */
+  border-radius: 8px;
+  background: #1d4ed8; 
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn_login:hover
+{
+opacity: 0.75;
+}
+
+.p_error
+{
+  font-weight: bold;
+  color: #b80101;
+  margin-top: 12px;
+}

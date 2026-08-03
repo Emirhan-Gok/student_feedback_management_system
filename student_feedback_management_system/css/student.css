@@ -1,0 +1,108 @@
+/*student.css contains styling for the view feedback page and progress overview page, shared between each other as it is easier to maintain small consistent changes. */
+.card_student,
+.card_feedback
+{
+   /* Use a light card background and subtle shadow so important student content stands out from the page. */
+  background: rgba(255,255,255, 0.75);
+  border: 1px solid rgba(255,255,255, 0.9);
+  border-radius: 10px;
+  margin: 14px 0;
+  text-align: center;
+
+  /* Flexbox keeps the card content centered and stacked neatly. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 18px rgba(0,0,0, 0.12);
+}
+
+.card_student
+{
+  padding: 18px 22px;
+}
+
+.card_feedback
+{
+  /* Larger padding gives detailed feedback more breathing room and improves readability. */
+  padding: 30px 50px;
+}
+.card_feedback h3
+{
+  /* Remove extra top spacing and keep the heading close to its feedback section. */
+    margin: 0 0 10px 0;
+}
+
+.card_feedback p
+{
+  /* Keep feedback paragraphs compact but readable, with a comfortable line height for longer text. */
+    margin: 0;
+    line-height: 1.55;
+    max-width: 110ch; /* Limit line length so long feedback remains easier to read. */
+}
+
+
+.student_feedback
+{
+   /* Slightly larger font makes feedback text easier to read as the main page content. */
+    font-size: 18px;
+}
+
+/* CSS for Progress Overview Page, includes styling for charts and mark summaries*/
+.progress_bar_card
+{
+  /* Bar chart should use the full available page width. */
+  width: 100%;
+  max-width: none;
+}
+
+.progress_bottom_row
+{
+   /* Use flexbox so the score summary and line chart can sit side by side. */
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.progress_score_summary
+{
+   /* Style the score summary as a separate card so key figures stand out beside the charts. */
+  margin-top: 20px; 
+  padding: 30px 10px;
+  text-align: center;
+  max-width: 360px;
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+.chart_bar,
+.chart_line
+{
+  /* Relative positioning helps Chart.js fit neatly inside the chart containers. */
+  position: relative;
+  width: 100%;
+}
+
+.chart_bar
+{
+  height: 280px;
+}
+
+.chart_line
+{
+  height: 340px;
+}
+
+.chart_bar canvas,
+.chart_line canvas
+{
+  /* Make each chart fill its wrapper and style it like a dashboard card. */
+  display: block;
+  width: 100%;
+  height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.10);     /* soft outline */
+  border-radius: 16px;                        /* rounded corners */
+  box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+}
