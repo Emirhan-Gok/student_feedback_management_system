@@ -36,6 +36,24 @@ Allows teachers to enter feedback for a selected student.
 
 Allows teachers to overwrite previously submitted feedback for a selected student.
 
+
+## Demo Accounts
+
+## Teachers 
+Username: Davis 
+Password: Password123
+
+Username: Jones 
+Password: Password123 
+
+
+## Students 
+Username: Kevin 
+Password: Password123 
+
+Username: Jamie 
+Password: Password123
+
 ---
 
 ## Tech Stack
