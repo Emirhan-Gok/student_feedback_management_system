@@ -10,29 +10,29 @@ This project was developed as part of my **final-year Computer Science dissertat
 
 ### Student Dashboard
 
-![Student Dashboard](docs/student_dashboard.png)
+![Student Dashboard](student_feedback_management_system/docs/student_dashboard.png)
 
 Displays quiz results, feedback availability, risk indicators, and a progress chart.
 
 
 
-![Progress Overview](docs/progress_overview.png)
+![Progress Overview](student_feedback_management_system/docs/progress_overview.png)
 
 Displays progress charts, score summaries, and score trends for the logged-in student.
 
 ### Teacher Dashboard
 
-![Teacher Dashboard](docs/teacher_dashboard.png)
+![Teacher Dashboard](student_feedback_management_system/docs/teacher_dashboard.png)
 
 Displays student submissions, feedback actions, risk status, and class performance analytics.
 
 ### Feedback
 
-![Enter Feedback](docs/enter_feedback.png)
+![Enter Feedback](student_feedback_management_system/docs/enter_feedback.png)
 
 Allows teachers to enter feedback for a selected student.
 
-![Overwrite Feedback](docs/overwrite_feedback.png)
+![Overwrite Feedback](student_feedback_management_system/docs/overwrite_feedback.png)
 
 Allows teachers to overwrite previously submitted feedback for a selected student.
 
