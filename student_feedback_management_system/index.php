@@ -86,26 +86,34 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["role"]))
 <html>
 <title>Feedback System</title>
 <head>
+<link rel="stylesheet" href="css/assets/bootstrap.min.css">
 <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-<div class="containerlogin">
-<div class="cardlogin">
-<h1> Welcome to the Feedback System! </h1>
-<h3> Please login using your credentials. </h3>
+<body class="bg-light">
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="card shadow-sm border-0 p-4 " style="max-width: 450px; width: 100%;">
 
-<p class="p_error"> <?php echo $error; ?> </p>
+            <h1 class="text-center mb-2 header_index"> Welcome to the Feedback System! </h1>
+            <p class="text-muted mb-4"> Please login using your credentials. </p>
 
-<form method="post">
-<label for="username"> Username </label> <br>
-<input type="text" id="username" name="username" required> 
+            <?php if ($error !== ""): ?>
+                <div class="alert alert-danger mb-4"> <?php echo htmlspecialchars($error); ?> 
+            
+            </div>
+            <?php endif; ?>
+            <form method="post">
+                <div class="mb-3">
+                <label for="username" class="form-label"> Username </label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
 
-<label for="password"> Password </label> <br>
-<input type="password" id="password" name="password" required> 
+            <div class="mb-3">
+                <label for="password" class="form-label"> Password </label>
+                <input type="password" class="form-control" id="password" name="password" required> 
+            </div>
+                <button type="submit" class="btn btn-primary w-100 btn_login"> Submit </button>
+            </form>
+        </div>
 
-<button class="btn_login" type="submit"> Submit </button>
-</form>
-</div>
-</div>
 </body>
 </html>
