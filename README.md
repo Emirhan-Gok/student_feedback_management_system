@@ -14,8 +14,6 @@ This project was developed as part of my **final-year Computer Science dissertat
 
 Displays quiz results, feedback availability, risk indicators, and a progress chart.
 
-
-
 ![Progress Overview](student_feedback_management_system/docs/progress_overview.png)
 
 Displays progress charts, score summaries, and score trends for the logged-in student.
@@ -36,22 +34,22 @@ Allows teachers to enter feedback for a selected student.
 
 Allows teachers to overwrite previously submitted feedback for a selected student.
 
-
 ## Demo Accounts
 
-## Teachers 
-Username: Davis 
+## Teachers
+
+Username: Davis
 Password: Password123
 
-Username: Jones 
-Password: Password123 
+Username: Jones
+Password: Password123
 
+## Students
 
-## Students 
-Username: Kevin 
-Password: Password123 
+Username: Kevin
+Password: Password123
 
-Username: Jamie 
+Username: Jamie
 Password: Password123
 
 ---
@@ -132,6 +130,7 @@ Sensitive credentials have been removed from this repository. Database access us
 - Search and filtering features
 - Email notifications
 - Automated testing
+- Implement Bootstrap to student and teacher dashboards to create a more consistent UI throughout the system while reducing unecessary custom CSS.
 
 ---
 
