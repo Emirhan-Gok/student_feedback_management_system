@@ -38,21 +38,25 @@ $chartData[] =(int)$chartRows["score"];
 <html> 
 <head>
    <title> Student Dashboard </title> 
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/assets/bootstrap.min.css">
    <link rel="stylesheet" href="../css/styles.css">
    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 <body>
 
 <!-- This is the student sidebar. It allows for navigation between pages. -->
-<div class="dashboard_layout">
-<aside class="dashboard_sidebar">
+<div class="container-fluid dashboard_layout">
+    <div class="row">
+    <aside class="col-md-3 col-lg-2 dashboard_sidebar">
 <h3 class="menu_text"> Navigation </h3>
 <a class="dashboard_link" href="progress_overview.php"> Progress Overview </a>
 <a class="dashboard_link" href="../logout.php"> Logout </a>
-</aside>
+    </aside>
 
-<main class="dashboard_main_content">
-    <p class="dashboard_welcome"> Welcome to your dashboard, <?php echo htmlspecialchars($username); ?>.  </p>
+<main class="col-md-9 col-lg-10 dashboard_main_content">
+    <p class="dashboard_welcome mb-3 mx-auto"> Welcome to your dashboard, <?php echo htmlspecialchars($username); ?>.  </p>
     <h2 class="result_quiz">Your Results and Quizzes</h2>
     <div class="card_dashboard">
     <table class="tbl_main">
