@@ -34,6 +34,8 @@ Allows teachers to enter feedback for a selected student.
 
 Allows teachers to overwrite previously submitted feedback for a selected student.
 
+<!-- TODO: Update screenshots once Bootstrap is implemented on all pages to reflect the curent state of the application.-->
+
 ## Demo Accounts
 
 ## Teachers
@@ -93,12 +95,18 @@ student-feedback-management-system/
 
 ## Local Setup
 
-1. Create a MySQL database.
-2. Import `base_feedback_system.sql`.
-3. Update `include/db.php` with your database credentials.
-4. Place the project inside your XAMPP/WAMP `htdocs` directory.
-5. Start **Apache** and **MySQL**.
-6. Open:
+Installation
+Clone the repository:
+git clone https://github.com/Emirhan-Gok/student_feedback_management_system.git
+Navigate into the project directory:
+cd student_feedback_management_system
+Install the project dependencies:
+npm install
+Create a MySQL database and import the project's database structure/data.
+Configure the database connection in:
+include/db.php
+Configure the project to run through your local PHP server.
+Open the application through your local development environment:
 
 http://localhost/student-feedback-management-system
 
