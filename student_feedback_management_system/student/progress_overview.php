@@ -63,21 +63,23 @@ if ($totalQuizzes > 0)
 <html>
 <head>
     <title>Progress Overview</title>
+    <link rel="stylesheet" href="../css/assets/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/student.css">
 </head>
 <body>
 
-<div class="dashboard_layout">
-    <aside class="dashboard_sidebar">
+<div class="container-fluid dashboard_layout">
+    <div class="row">
+    <aside class="col-3 col-lg-2 dashboard_sidebar">
         <h3 class="menu_text">Navigation</h3>
         <a class="dashboard_link" href="student_dashboard.php">Dashboard</a>
         <a class="dashboard_link" href="progress_overview.php">Progress Overview</a>
         <a class="dashboard_link" href="../logout.php">Logout</a>
     </aside>
 
-    <main class="student_main_content">
+    <main class="col-9 col-lg-10 student_main_content">
     <p class="dashboard_welcome">Progress Overview</p>
     <h2 class="result_quiz">Your Progress Overview</h2>
 
