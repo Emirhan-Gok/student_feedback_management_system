@@ -59,19 +59,21 @@ foreach($rowsAvg as $rowAvg )
 <html>
 <head>
 <title> Teacher Dashboard </title>
+<link rel="stylesheet" href="../css/assets/bootstrap.min.css">
 <link rel="stylesheet" href="../css/styles.css">
 <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 <body>
 
-<div class="dashboard_layout">
-<aside class="dashboard_sidebar">
-<h3 class="menu_text"> Navigation </h3>
-<a class="dashboard_link" href="teacher_dashboard.php"> Dashboard </a>
-<a class="dashboard_link" href="../logout.php"> Logout </a>
-</aside>
+<div class="container-fluid dashboard_layout">
+    <div class="row">
+        <aside class="col-3 col-lg-2 dashboard_sidebar">
+            <h3 class="menu_text"> Navigation </h3>
+            <a class="dashboard_link" href="teacher_dashboard.php"> Dashboard </a>
+            <a class="dashboard_link" href="../logout.php"> Logout </a>
+        </aside>
 
-<main class ="dashboard_main_content">
+<main class ="col-9 col-lg-10 dashboard_main_content">
 <p class="dashboard_welcome"> Welcome to your dashboard, <?php echo htmlspecialchars($username); ?>. </p>
 <h2 class="result_quiz">Student Submissions </h2>
 <div class ="card_dashboard">
@@ -184,6 +186,7 @@ options:
 });
 </script>
 </main>
+</div>
 </div>
 </body>
 </html>
