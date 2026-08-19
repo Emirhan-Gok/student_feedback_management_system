@@ -151,20 +151,22 @@ $chartData = [$studentScore, $classAverage];
 <html>
 <head>
     <title><?php echo htmlspecialchars($pageTitle); ?></title>
+    <link rel="stylesheet" href="../css/assets/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/teacher.css">
 </head>
 <body>
 
-<div class="dashboard_layout">
-  <aside class="dashboard_sidebar">
+<div class="container-fluid dashboard_layout">
+    <div class="row">
+  <aside class="col-3 col-lg-2 dashboard_sidebar">
     <h3 class="menu_text">Navigation</h3>
     <a class="dashboard_link" href="teacher_dashboard.php">Back to Class View</a>
      <a class="dashboard_link" href="../logout.php">Logout</a>
   </aside>
 
-  <main class="dashboard_main_content">
+  <main class="col-9 col-lg-10 dashboard_main_content">
 
     <h2 class="result_quiz"><?php echo htmlspecialchars($pageTitle); ?> for <?php echo htmlspecialchars($rowSubmission["student_name"]); ?></h2>
 
@@ -211,6 +213,7 @@ $chartData = [$studentScore, $classAverage];
         </form>
     </div>
   </main>
+</div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5/dist/chart.umd.min.js"></script>
 <script>

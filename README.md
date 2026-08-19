@@ -122,6 +122,7 @@ Through this project I gained experience in:
 - Writing secure SQL queries with PDO prepared statements
 - Creating dashboard-style analytics using JavaScript charts
 - Structuring a multi-user web application
+- Implementing Bootstrap layout to provide consistency across pages.
 
 ---
 
@@ -138,7 +139,6 @@ Sensitive credentials have been removed from this repository. Database access us
 - Search and filtering features
 - Email notifications
 - Automated testing
-- Implement Bootstrap to student and teacher dashboards to create a more consistent UI throughout the system while reducing unecessary custom CSS.
 
 ---
 
